@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1045650967733",
+    "project_id": "you-fit-6dd4f",
+    "storage_bucket": "you-fit-6dd4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045650967733:android:715291eab72453bba542fc",
+        "android_client_info": {
+          "package_name": "com.example.you_fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045650967733-vmtqgdr0eekifn670l2vs20pdrroe7kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOj_pg9Gz7_icCjwVYZy33YQENcZqVBFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045650967733-vmtqgdr0eekifn670l2vs20pdrroe7kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
