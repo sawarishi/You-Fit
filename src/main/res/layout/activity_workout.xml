@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22f1eaea"
+    android:orientation="vertical"
+    tools:context=".workout">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="?android:attr/statusBarColor"
+       android:textAlignment="textEnd"
+       android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+       app:title="You-Fit"
+       app:titleTextColor="#ffffff"
+       android:gravity="end"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1.0"
+       android:orientation="vertical">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/mountain"
+          android:scrollbars="none">
+
+
+
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/boat"
+                   android:onClick="imageClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Mountain Climber"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/mountain_climber"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                      <ImageView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="5dp"
+                          android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="1.0dp" />
+
+            </LinearLayout>
+          //----------------------------
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/crunches"
+                   android:onClick="crunchImage"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Crunches"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/crunches"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+            </LinearLayout>
+
+            //----------------------------
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/Dips"
+                   android:onClick="dipsClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Dips"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/dips"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+
+
+            </LinearLayout>
+
+            //----------------------------
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/bicycle"
+                   android:onClick="bicycle"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Bicycle Crunches"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/bicycle"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            //----------------------------
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/legRaise"
+                   android:onClick="legRaiseClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Leg raise"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/leglifts"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+
+            </LinearLayout>
+
+
+            //----------------------------
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/push"
+                   android:onClick="pushUpClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Push-UPs"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/push"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+
+            </LinearLayout>
+
+            //----------------------------
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/burpee"
+                   android:onClick="onBurpeesClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Burpees"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/burpeess"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+            </LinearLayout>
+
+            //----------------------------
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+               <LinearLayout
+
+                   android:id="@+id/Squats"
+                   android:onClick="squatsClicked"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/dashbackground"
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dp"
+                      android:layout_weight="1.0"
+                      android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="monospace"
+                         android:text="Squats"
+                         android:textAllCaps="true"
+                         android:textColor="#ff000000"
+                         android:textSize="15dp"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Do 3 sets"
+                         android:textColor="#ff000000"
+                         android:textStyle="bold"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01:00 MIN"
+                         android:textColor="@color/white"
+                         android:textStyle="bold"/>
+
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2.0">
+
+
+                     <pl.droidsonroids.gif.GifImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="4dp"
+                         android:src="@drawable/squat"/>
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_weight="0.0">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:src="@drawable/ic_baseline_arrow_right_24"/>
+
+
+                  </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="1.0dp"/>
+
+
+            </LinearLayout>
+
+            //----------------------------
+
+
+         </LinearLayout>
+
+
+
+
+      </ScrollView>
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>
